@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/deadcfe648.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabu Software - Servicios</title>
+  </head>
+  <body class="grid_parent-other">
+
+    <div id="topmenu" class="topmenu">
+      <span id="logo" class="topmenu_logo" onclick="location.href = 'index.html'">
+        <img src="img/logo.png" alt="Logo Nabu Software" width="50px">
+        <h4>Nabu</h4>
+      </span>
+      <ul>
+        <li>
+          <a href="servicios.html"><i class="fa-solid fa-bell-concierge"></i>Servicios</a>
+        </li>
+        <li>
+          <a href="productos.html"><i class="fa-solid fa-suitcase"></i>Productos</a>
+        </li>
+        <li>
+          <a href="quienes_somos.html"><i class="fa-solid fa-people-group"></i>Nosotros</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-comments"></i>Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content" class="content content-flex_contacto">
+
+
+      <div class="contacto-formulario">
+
+        <div class="contacto-info">
+          <div class="contacto-dato">
+            <span class="contacto-dato_titulo">Localizacion:</span>
+             San Carlos de Bariloche, Río Negro, Patagónia Argentina
+          </div>
+          <div class="contacto-dato">
+            <span class="contacto-dato_titulo">E-Mail:</span>
+             nabu.software.ar@gmail.com
+          </div>
+          <div class="contacto-dato">
+            <span class="contacto-dato_titulo">Tel:</span>
+             (+54) 294 450 2515
+          </div>
+        </div>
+
+        <form class="contacto-formulario_form" action="contacto.php" method="post">
+          <select class="" name="">
+            <option value="">Razón</option>
+            <option value="">Consulta</option>
+            <option value="">Presupuestos</option>
+            <option value="">Soporte</option>
+            <option value="">Trabajar con nosotros</option>
+          </select>
+
+          <input type="text" name="name" placeholder="Nombre">
+
+          <div class="contacto-formulario_form_mail_tel">
+            <input type="email" name="email" placeholder="E-Mail">
+
+            <input type="tel" name="tel" placeholder="Teléfono">
+          </div>
+
+          <textarea name="message" rows="8" cols="80" placeholder="Mensaje..."></textarea>
+
+          <input class="contacto-formulario_form_button" type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+
+    <div id="footer" class="footer">
+      Nabu Software - Soluciones Digitales
+      <i class="footer_redes fa-brands fa-facebook-square"></i>
+      <i class="footer_redes fa-brands fa-instagram"></i>
+    </div>
+  </body>
+</html>
