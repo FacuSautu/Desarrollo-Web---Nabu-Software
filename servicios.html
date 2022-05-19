@@ -1,102 +1,156 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Link a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Link a mi hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/deadcfe648.js" crossorigin="anonymous"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nabu Software - Servicios</title>
   </head>
-  <body class="grid_parent-other">
+  <body>
 
-    <div id="topmenu" class="topmenu">
-      <span id="logo" class="topmenu_logo" onclick="location.href = 'index.html'">
-        <img src="img/logo.png" alt="Logo Nabu Software" width="50px">
-        <h4>Nabu</h4>
-      </span>
-      <ul>
-        <li>
-          <a href=""><i class="fa-solid fa-bell-concierge"></i>Servicios</a>
-        </li>
-        <li>
-          <a href="productos.html"><i class="fa-solid fa-suitcase"></i>Productos</a>
-        </li>
-        <li>
-          <a href="quienes_somos.html"><i class="fa-solid fa-people-group"></i>Nosotros</a>
-        </li>
-        <li>
-          <a href="contacto.html"><i class="fa-solid fa-comments"></i>Contacto</a>
-        </li>
-      </ul>
-    </div>
+    <nav id="topmenu" class="row navbar navbar-expand-md bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+          <img src="img/logo.png" alt="Logo Nabu Software" width="50px">
+          Nabu
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="img/logo.png" alt="Logo Nabu Software" width="50px" onclick="location.href = 'index.html'">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel" onclick="location.href = 'index.html'">Nabu Software</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-white active" href="#">
+                  <i class="fa-solid fa-bell-concierge"></i>
+                  Servicios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="productos.html">
+                  <i class="fa-solid fa-suitcase"></i>
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="quienes_somos.html">
+                  <i class="fa-solid fa-people-group"></i>
+                  Nosotros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">
+                  <i class="fa-solid fa-comments"></i>
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <div id="content" class="content">
-      <div class="content-servicios">
+    <div id="content" class="row">
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <div class="servicios_inicio">
-          <div class="servicios_inicio_titulo titulo">
+          <div class="mb-3 servicios_inicio_titulo titulo">
             Nuestros Servicios
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
-        <div class="servicios-r">
-          <img class="servicios_imagen" src="img/desktop/servicios/desarrollo_a_medida.jpg" alt="Imagen Servicio Aplicaciones Moviles">
-          <div class="servicios_detalle">
-            <div class="servicios_titulo">
-              Desarrollo a Medida
+        <div class="card col-10 col-md-12 mb-3 servicios-l">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img class="img-fluid rounded" src="img/desktop/servicios/desarrollo_a_medida.jpg" alt="Imagen Servicio Desarrollo a Medida">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title align-self-end servicios_titulo position-relative">Desarrollo a Medida</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="servicios-l">
-          <div class="servicios_detalle">
-            <div class="servicios_titulo">
-              Auditoria Técnica
+        <div class="card col-10 col-md-12 mb-3 servicios-r">
+          <div class="row g-0">
+            <div class="col-md-4 order-md-2">
+              <img class="img-fluid rounded" src="img/desktop/servicios/auditoria_tecnica.jpg" alt="Imagen Servicio Auditoria Tecnica">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <img class="servicios_imagen" src="img/desktop/servicios/auditoria_tecnica.jpg" alt="Imagen Servicio Aplicaciones Moviles">
-        </div>
-
-        <div class="servicios-r">
-          <img class="servicios_imagen" src="img/desktop/servicios/consultoria.jpg" alt="Imagen Servicio Aplicaciones Moviles">
-          <div class="servicios_detalle">
-            <div class="servicios_titulo">
-              Consultoría
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title servicios_titulo position-relative">Auditoria Técnica</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
 
-        <div class="servicios-l">
-          <div class="servicios_detalle">
-            <div class="servicios_titulo">
-              Paginas Web
+        <div class="card col-10 col-md-12 mb-3 servicios-l">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img class="img-fluid rounded" src="img/desktop/servicios/consultoria.jpg" alt="Imagen Servicio Consultoría">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title align-self-end servicios_titulo position-relative">Consultoría</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
           </div>
-          <img class="servicios_imagen" src="img/desktop/servicios/desarrollo_web.jpg" alt="Imagen Servicio Aplicaciones Moviles">
         </div>
 
-        <div class="servicios-r">
-          <img class="servicios_imagen" src="img/desktop/servicios/aplicaciones_moviles.jpg" alt="Imagen Servicio Aplicaciones Moviles">
-          <div class="servicios_detalle">
-            <div class="servicios_titulo">
-              Aplicaciones Móviles
+        <div class="card col-10 col-md-12 mb-3 servicios-r">
+          <div class="row g-0">
+            <div class="col-md-4 order-md-2">
+              <img class="img-fluid rounded" src="img/desktop/servicios/desarrollo_web.jpg" alt="Imagen Servicio Paginas Web">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title servicios_titulo position-relative">Paginas Web</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-10 col-md-12 mb-3 servicios-l">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img class="img-fluid rounded" src="img/desktop/servicios/aplicaciones_moviles.jpg" alt="Imagen Servicio Aplicaciones Moviles">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title align-self-end servicios_titulo position-relative">Aplicaciones Móviles</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer" class="footer">
+    <div id="footer" class="row justify-content-center text-white footer">
       Nabu Software - Soluciones Digitales
-      <i class="footer_redes fa-brands fa-facebook-square"></i>
-      <i class="footer_redes fa-brands fa-instagram"></i>
+      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-facebook-square"></i>
+      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-instagram"></i>
     </div>
+
+    <!-- Link al script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Link al script de Font Aweasom -->
+    <script src="https://kit.fontawesome.com/deadcfe648.js" crossorigin="anonymous"></script>
 
   </body>
 </html>
