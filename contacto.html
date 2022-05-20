@@ -11,7 +11,7 @@
 
     <title>Nabu Software - Servicios</title>
   </head>
-  <body>
+  <body class="container-fluid">
 
     <nav id="topmenu" class="row navbar navbar-expand-md bg-dark">
       <div class="container-fluid">
@@ -62,44 +62,58 @@
 
     <div id="content" class="row d-flex justify-content-center align-items-center contacto_content">
 
-      <div class="align-self-end align-self-md-center d-flex flex-column flex-md-row justify-content-end justify-content-md-center align-items-center px-2 col-7 col-md-11 contacto-formulario">
+      <div class="position-relative h-auto align-self-end align-self-md-center d-flex flex-column flex-md-row justify-content-end justify-content-md-center align-items-center p-3 col-7 col-md-11 contacto-formulario">
 
-        <div class="d-flex flex-column justify-content-center align-items-center col-10 col-md-6 contacto-info">
-          <div class="mb-3 d-flex flex-column justify-content-center col-9">
-            <span class="position-relative mb-2 contacto-dato_titulo">Localizacion:</span>
-            San Carlos de Bariloche, Río Negro, Patagónia Argentina
+        <div class="col-6"></div>
+        <div class="position-absolute pt-3 pt-md-0 d-flex flex-column justify-content-center align-items-center col-12 col-md-5 contacto-info">
+            <div class="mb-3 d-flex flex-column justify-content-center col-9">
+              <span class="position-relative mb-2 contacto-dato_titulo">Localizacion:</span>
+              San Carlos de Bariloche, Río Negro, Patagónia Argentina
+            </div>
+            <div class="mb-3 d-flex flex-column justify-content-center col-9">
+              <span class="position-relative mb-2 contacto-dato_titulo">E-Mail:</span>
+              nabu.software.ar@gmail.com
+            </div>
+            <div class="mb-3 d-flex flex-column justify-content-center col-9">
+              <span class="position-relative mb-2 contacto-dato_titulo">Tel:</span>
+              (+54) 294 450 2515
+            </div>
           </div>
-          <div class="mb-3 d-flex flex-column justify-content-center col-9">
-            <span class="position-relative mb-2 contacto-dato_titulo">E-Mail:</span>
-            nabu.software.ar@gmail.com
-          </div>
-          <div class="mb-3 d-flex flex-column justify-content-center col-9">
-            <span class="position-relative mb-2 contacto-dato_titulo">Tel:</span>
-            (+54) 294 450 2515
-          </div>
+
+
+        <div class="col-12 col-md-6 h-100 d-flex justify-content-center">
+          <form class="row h-auto d-flex flex-column flex-nowrap justify-content-evenly align-items-center ml-md-2 mt-4 mt-md-0" action="contacto.php" method="post">
+            <div class="mb-1 col-12 col-md-9">
+              <select class="form-control" name="">
+                <option value="">Razón</option>
+                <option value="">Consulta</option>
+                <option value="">Presupuestos</option>
+                <option value="">Soporte</option>
+                <option value="">Trabajar con nosotros</option>
+              </select>
+            </div>
+
+            <div class="mb-1 col-12 col-md-9">
+              <input class="form-control" type="text" name="name" placeholder="Nombre">
+            </div>
+
+            <div class="row mb-1 px-0 col-12 col-md-9">
+              <div class="col-5">
+                <input class="form-control" type="email" name="email" placeholder="E-Mail">
+              </div>
+
+              <div class="col-5 offset-2">
+                <input class="form-control" type="tel" name="tel" placeholder="Teléfono">
+              </div>
+            </div>
+
+            <div class="mb-1 col-12 col-md-9">
+              <textarea class="form-control" name="message" rows="8" cols="80" placeholder="Mensaje..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary col-3 contacto-formulario_form_button">Enviar</button>
+          </form>
         </div>
-
-        <form class="row h-100 d-flex flex-column justify-content-evenly align-items-center ml-md-2 mt-4 mt-md-0 col-10 col-md-5 offset-md-1 contacto-formulario_form" action="contacto.php" method="post">
-          <select class="mb-1 col-9" name="">
-            <option value="">Razón</option>
-            <option value="">Consulta</option>
-            <option value="">Presupuestos</option>
-            <option value="">Soporte</option>
-            <option value="">Trabajar con nosotros</option>
-          </select>
-
-          <input class="mb-1 col-9" type="text" name="name" placeholder="Nombre">
-
-          <div class="row mb-1 px-0 col-9">
-            <input class="col-5" type="email" name="email" placeholder="E-Mail">
-
-            <input class="col-5 offset-2" type="tel" name="tel" placeholder="Teléfono">
-          </div>
-
-          <textarea class="mb-1 col-9" name="message" rows="8" cols="80" placeholder="Mensaje..."></textarea>
-
-          <button type="submit" class="btn btn-primary col-3 contacto-formulario_form_button">Enviar</button>
-        </form>
 
       </div>
 
