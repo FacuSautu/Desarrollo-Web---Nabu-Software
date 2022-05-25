@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+/* ========================================================================== */
+/* ====================== Reset de margenes y paddings ====================== */
+/* ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+/* ========================================================================== */
+/* ============================ Estilos del Home ============================ */
+/* ========================================================================== */
+.index_body {
+  height: 100vh;
+}
+
+.first_row_index {
+  height: 96%;
+}
+
+.sidemenu {
+  background-color: rgba(4, 11, 20, 0.9);
+}
+
+.sidemenu a {
+  font-size: 20px;
+}
+
+.background_video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.content-index_slogan {
+  font-size: 2rem;
+}
+
+/* ========================================================================== */
+/* ======================= Estilos pagina Servicios ========================= */
+/* ========================================================================== */
+.servicios_imagen {
+  height: 15rem;
+}
+
+.servicios-l {
+  background-color: #149ddd;
+  opacity: 0.95;
+}
+
+.servicios-l .servicios_titulo {
+  position: relative;
+  color: #173b6c;
+  font-size: 1.25rem;
+  height: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .servicios-l .servicios_titulo {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.servicios-l .servicios_titulo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #173b6c;
+  bottom: 0;
+  left: 0;
+}
+
+.servicios-r {
+  background-color: #173b6c;
+  opacity: 0.95;
+}
+
+.servicios-r .servicios_titulo {
+  position: relative;
+  color: #149ddd;
+  font-size: 1.25rem;
+  height: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .servicios-r .servicios_titulo {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.servicios-r .servicios_titulo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+/* ========================================================================== */
+/* ======================= Estilos pagina Productos ========================= */
+/* ========================================================================== */
+.productos_list .card {
+  height: fit-content;
+  transition: transform 0.5s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto:hover .producto_titulo {
+  display: unset !important;
+}
+
+.producto:hover .producto_detalle {
+  display: unset !important;
+}
+
+/* ========================================================================== */
+/* ===================== Estilos pagina Quienes Somos ======================= */
+/* ========================================================================== */
+/* ====================== CARROUSEL ======================== */
+.imagen_carousel {
+  filter: grayscale(100%);
+  transition: filter 1s;
+}
+
+.imagen_carousel:hover {
+  filter: grayscale(0%);
+}
+
+/* ===================== CASOS EXITO ======================= */
+.proyecto {
+  transition: transform 2s;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+}
+
+.proyecto:hover .proyecto_titulo {
+  display: unset !important;
+}
+
+.proyecto:hover .proyecto_detalle {
+  display: unset !important;
+}
+
+/* ===================== CLIENTES ======================= */
+.cliente_imagen {
+  border-radius: 50%;
+}
+
+/* ===================== INTEGRANTES ======================= */
+.quienes_somos-integrante {
+  background-color: #149ddd;
+  opacity: 0.8;
+}
+
+.integrante_nombre {
+  position: relative;
+  color: #173b6c;
+  font-size: 1.25rem;
+  height: 1.5rem;
+  text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+  .integrante_nombre {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* ========================================================================== */
+/* ======================== Estilos pagina Contacto ========================= */
+/* ========================================================================== */
+.contacto_content {
+  height: 85vh;
+}
+
+.contacto-info {
+  height: 80vh;
+  left: 7%;
+  background-color: #173b6c;
+}
+
+@media all and (max-width: 768px) {
+  .contacto-info {
+    position: static !important;
+    height: auto;
+    bottom: 50%;
+  }
+}
+
+.contacto-dato_titulo {
+  position: relative;
+  color: #149ddd;
+  font-size: 1.5rem;
+  height: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .contacto-dato_titulo {
+    height: 1.7rem;
+    font-size: 1.25rem;
+  }
+}
+
+.contacto-dato_titulo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+@media all and (max-width: 768px) {
+  .contacto-dato_titulo {
+    font-size: 1rem;
+    height: 1.25rem;
+  }
+}
+
+.contacto-formulario {
+  background-color: #149ddd;
+}
+
+.contacto-formulario .contacto-formulario_form_button {
+  background-color: #173b6c;
+}
+
+@media all and (max-width: 768px) {
+  .contacto-formulario {
+    height: 50%;
+    margin: 30px 0;
+  }
+}
+
+/* ========================================================================== */
+/* =========================== Estilos Generales ============================ */
+/* ========================================================================== */
+.titulo {
+  position: relative;
+  color: #173b6c;
+  font-size: 1.5rem;
+  height: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .titulo {
+    height: 1.7rem;
+    font-size: 1.25rem;
+  }
+}
+
+.titulo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.subtitulo {
+  position: relative;
+  color: #149ddd;
+  font-size: 1.25rem;
+  height: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .subtitulo {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.subtitulo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #173b6c;
+  bottom: 0;
+  left: 0;
+}
+
+.footer {
+  background-color: #040b14;
+  padding: 2px;
+}
+
+.footer .footer_redes {
+  cursor: pointer;
+}
