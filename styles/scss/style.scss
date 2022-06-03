@@ -62,10 +62,10 @@ body{
   min-height: 100vh;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: map-get($fuentes, principal);
 
   // Fuente opcional
-  // font-family: 'Oswald', sans-serif;
+  // font-family: map-get($fuentes, secundaria);
   // font-size: 1.1rem;
 
   @media all and (max-width: 768px) {
@@ -87,6 +87,19 @@ body{
 
 .sidemenu{
   background-color: rgba(4, 11, 20, 0.9);
+
+  .sidemenu_logo{
+    img{
+      width: 200px;
+      height: auto;
+    }
+  }
+  .nabu_sidemenu{
+    font-size: 2rem;
+  }
+  .slogan_sidemenu{
+    font-size: 1.25rem;
+  }
   a{
     font-size: 20px;
   }
@@ -105,11 +118,18 @@ body{
 }
 
 .content-index_frase{
-
+  font-size: 2.25rem;
 }
 
 .content-index_slogan{
   @include texto-principal;
+}
+
+.content-index_content_mobile{
+  img{
+    width: 200px;
+    height: auto;
+  }
 }
 
 /* ========================================================================== */
@@ -120,9 +140,13 @@ body{
   height: 15rem;
 }
 
+%opaciti.95{
+  opacity: 0.95;
+}
+
 .servicios-l{
   background-color: $color_primario;
-  opacity: 0.95;
+  @extend %opaciti.95;
 
   .servicios_titulo{
     @include texto-titulos('subtitulo', $color_secundario, $color_secundario);
@@ -131,7 +155,7 @@ body{
 
 .servicios-r{
   background-color: $color_secundario;
-  opacity: 0.95;
+  @extend %opaciti.95;
 
   .servicios_titulo{
     @include texto-titulos('subtitulo', $color_primario, $color_primario);
@@ -212,6 +236,10 @@ body{
   @include texto-titulos('subtitulo', $color_secundario, $color_primario, underline);
 }
 
+.integrante_puesto{
+  @extend .normal_fs;
+}
+
 /* ========================================================================== */
 /* ======================== Estilos pagina Contacto ========================= */
 /* ========================================================================== */
@@ -264,6 +292,15 @@ body{
 
 .subtitulo{
   @include texto-titulos('subtitulo', $color_primario, $color_secundario);
+}
+
+.normal_fs{
+  font-size: 1rem;
+}
+
+.logo_nav{
+  width: 50px;
+  height: auto;
 }
 
 .footer{

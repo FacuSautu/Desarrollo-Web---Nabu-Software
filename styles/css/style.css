@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media all and (max-width: 768px) {
@@ -36,6 +36,19 @@ body {
   background-color: rgba(4, 11, 20, 0.9);
 }
 
+.sidemenu .sidemenu_logo img {
+  width: 200px;
+  height: auto;
+}
+
+.sidemenu .nabu_sidemenu {
+  font-size: 2rem;
+}
+
+.sidemenu .slogan_sidemenu {
+  font-size: 1.25rem;
+}
+
 .sidemenu a {
   font-size: 20px;
 }
@@ -52,8 +65,17 @@ body {
   z-index: -1;
 }
 
+.content-index_frase {
+  font-size: 2.25rem;
+}
+
 .content-index_slogan {
   font-size: 2rem;
+}
+
+.content-index_content_mobile img {
+  width: 200px;
+  height: auto;
 }
 
 /* ========================================================================== */
@@ -63,9 +85,12 @@ body {
   height: 15rem;
 }
 
+.servicios-l, .servicios-r {
+  opacity: 0.95;
+}
+
 .servicios-l {
   background-color: #149ddd;
-  opacity: 0.95;
 }
 
 .servicios-l .servicios_titulo {
@@ -95,7 +120,6 @@ body {
 
 .servicios-r {
   background-color: #173b6c;
-  opacity: 0.95;
 }
 
 .servicios-r .servicios_titulo {
@@ -318,6 +342,15 @@ body {
   background: #173b6c;
   bottom: 0;
   left: 0;
+}
+
+.normal_fs, .integrante_puesto {
+  font-size: 1rem;
+}
+
+.logo_nav {
+  width: 50px;
+  height: auto;
 }
 
 .footer {
