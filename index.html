@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <!-- Link a la hoja de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -9,21 +9,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- meta description -->
     <meta name="description" content="Nabu Software ofrece diversas soluciones a tus problemas digitales, abarcando cada situación con distintos productos o servicios en el ámbito tecnológico. Nos dedicamos principalmente al desarrollo de sistemas informáticos, ofreciendo productos ideales para cada rubro y necesidad de nuestros clientes.">
 
     <title>Nabu Software - Home</title>
 
   </head>
-  <body class="index_body">
+  <body class="container-fluid index_body">
 
+    <!-- inicio menu mobile -->
     <div id="mobile_menu" class="row container-fluid d-block d-md-none">
-      <nav class="navbar bg-dark text-white fixed-top">
+      <nav class="navbar text-white fixed-top background_color_nabu">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-start text-white background_color_nabu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <img class="logo_nav" src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253">
               <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Nabu Software</h1>
@@ -57,14 +59,15 @@
         </div>
       </nav>
     </div>
+    <!-- fin menu mobile -->
 
 
     <div class="row first_row_index">
+      <!-- inicio side menu -->
       <nav id="sidemenu" class="col-2 d-none d-md-flex flex-column align-items-center sidemenu">
         <span id="logo" class="text-white text-center d-flex flex-column justify-content-center align-items-center sidemenu_logo">
           <img src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253">
           <h1 class="nabu_sidemenu">Nabu Software</h1>
-          <h2 class="slogan_sidemenu">Soluciones digitales</h2>
         </span>
         <ul class="w-100 h-100 mt-50px d-flex flex-column justify-content-evenly align-items-center list-unstyled">
           <li>
@@ -81,8 +84,9 @@
           </li>
         </ul>
       </nav>
+      <!-- fin side menu -->
 
-
+      <!-- inicio contenido principal -->
       <div id="content" class="col-12 col-md-10 d-flex flex-column justify-content-center align-items-center">
 
         <video class="background_video" autoplay loop muted poster="img/videos/coding_background.mp4">
@@ -98,21 +102,48 @@
           </span>
         </div>
 
-        <span class="text-white fw-bolder text-center content-index_frase">Programando el Futuro</span>
+        <span class="text-white content-index_frase">
+          <span class="d-none d-md-block text-center fw-bolder">Soluciones Digitales</span>
+          <span class="align-self-start typedText"></span>
+        </span>
       </div>
+      <!-- fin contenido principal -->
     </div>
 
-
-    <section id="footer" class="row justify-content-center text-white footer">
+    <!-- inicio footer -->
+    <section id="footer" class="row position-fixed start-0 bottom-0 end-0 justify-content-center text-white footer">
       Nabu Software - Soluciones Digitales
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-facebook-square"></i>
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-instagram"></i>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://es-la.facebook.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-facebook-square"></i>
+      </a>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://www.instagram.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-instagram"></i>
+      </a>
     </section>
+    <!-- fin footer -->
 
     <!-- Link al script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- Link al script de Font Aweasom -->
     <script src="https://kit.fontawesome.com/deadcfe648.js" crossorigin="anonymous"></script>
+    <!-- Link al script para animacion de Typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <script type="text/javascript">
+      var typedTxt = new Typed(".typedText", {
+        strings: [
+          "Desarrollo a Medida",
+          "Tiendas Online",
+          "App Moviles",
+          "Desarrollo Web",
+          "Auditorias Tecnicas",
+          "Diseño Digital",
+          "Asesoramiento Empresarial"
+        ],
+        typeSpeed: 100,
+        loop: true,
+        fadeOut: true
+      });
+    </script>
   </body>
 </html>

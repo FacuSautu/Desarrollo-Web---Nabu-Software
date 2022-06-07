@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <!-- Link a la hoja de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -9,13 +9,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- meta description -->
     <meta name="description" content="Nuestros servicios se centran en la asesoría, tanto de infraestructura informática como en los procesos administrativos de nuestros clientes. Ofrecemos servicios de desarrollo para los distintos dispositivos, rubros y procesos que puedan poseer nuestros clientes.">
 
     <title>Nabu Software - Servicios</title>
   </head>
   <body class="container-fluid">
 
-    <nav id="topmenu" class="row navbar navbar-expand-md bg-dark">
+    <!-- inicio top menu -->
+    <nav id="topmenu" class="row navbar navbar-expand-md background_color_nabu">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">
           <img class="logo_nav" src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253">
@@ -24,7 +26,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start background_color_nabu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <img class="logo_nav" src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253" onclick="location.href = 'index.html'">
             <p class="offcanvas-title text-white" id="offcanvasNavbarLabel" onclick="location.href = 'index.html'">Nabu Software</p>
@@ -61,16 +63,21 @@
         </div>
       </div>
     </nav>
+    <!-- fin top menu -->
 
+    <!-- inicio contenido principal -->
     <main id="content" class="row">
       <div class="d-flex flex-column justify-content-center align-items-center">
+        <!-- inicio info principal servicios -->
         <header class="servicios_inicio">
           <h1 class="mb-3 servicios_inicio_titulo titulo">
             Nuestros Servicios
           </h1>
           <p>Somos una grupo especializado en el área de tecnología de la información que ofrecemos soluciones digitales a medida focalizadas en las necesidades del cliente. Nuestras soluciones son integrales y escalables de herramientas de última generación en versión web, de escritorio, Windows o Linux que permiten realizar el trabajo desde cualquier parte.</p>
         </header>
+        <!-- fin info principal servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-l">
           <div class="row g-0">
             <div class="col-md-4">
@@ -84,7 +91,9 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-r">
           <div class="row g-0">
             <div class="col-md-4 order-md-2">
@@ -98,7 +107,9 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-l">
           <div class="row g-0">
             <div class="col-md-4">
@@ -112,7 +123,9 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-r">
           <div class="row g-0">
             <div class="col-md-4 order-md-2">
@@ -126,7 +139,9 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-l">
           <div class="row g-0">
             <div class="col-md-4">
@@ -140,7 +155,9 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
 
+        <!-- inicio info servicios -->
         <article class="card col-10 col-md-12 mb-3 servicios-r">
           <div class="row g-0">
             <div class="col-md-4 order-md-2">
@@ -154,14 +171,22 @@
             </div>
           </div>
         </article>
+        <!-- fin info servicios -->
       </div>
     </main>
+    <!-- fin contenido principal -->
 
-    <section id="footer" class="row justify-content-center text-white footer">
+    <!-- inicio footer -->
+    <section id="footer" class="row position-fixed start-0 bottom-0 end-0 justify-content-center text-white footer">
       Nabu Software - Soluciones Digitales
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-facebook-square"></i>
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-instagram"></i>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://es-la.facebook.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-facebook-square"></i>
+      </a>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://www.instagram.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-instagram"></i>
+      </a>
     </section>
+    <!-- fin footer -->
 
     <!-- Link al script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

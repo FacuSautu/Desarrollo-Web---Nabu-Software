@@ -62,6 +62,7 @@ body{
   min-height: 100vh;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
   font-family: map-get($fuentes, principal);
 
   // Fuente opcional
@@ -82,10 +83,11 @@ body{
 }
 
 .first_row_index{
-  height: 96%;
+  height: 97%;
 }
 
 .sidemenu{
+  @extend .background_color_nabu;
   background-color: rgba(4, 11, 20, 0.9);
 
   .sidemenu_logo{
@@ -118,11 +120,13 @@ body{
 }
 
 .content-index_frase{
-  font-size: 2.25rem;
-}
-
-.content-index_slogan{
   @include texto-principal;
+  font-size: 3rem;
+
+  .typedText{
+    color: rgb(4, 11, 20);
+    font-size: 2rem;
+  }
 }
 
 .content-index_content_mobile{
@@ -148,6 +152,10 @@ body{
   background-color: $color_primario;
   @extend %opaciti.95;
 
+  &:hover{
+    animation: pulse-l 2s infinite;
+  }
+
   .servicios_titulo{
     @include texto-titulos('subtitulo', $color_secundario, $color_secundario);
   }
@@ -156,6 +164,10 @@ body{
 .servicios-r{
   background-color: $color_secundario;
   @extend %opaciti.95;
+
+  &:hover{
+    animation: pulse-r 2s infinite;
+  }
 
   .servicios_titulo{
     @include texto-titulos('subtitulo', $color_primario, $color_primario);
@@ -303,11 +315,49 @@ body{
   height: auto;
 }
 
+.background_color_nabu{
+  background-color: rgba(4, 11, 20, 0.9);
+}
+
 .footer{
   background-color: rgb(4, 11, 20);
   padding: 2px;
 
   .footer_redes{
     cursor: pointer;
+  }
+}
+
+@keyframes pulse-l{
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(20, 157, 221, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(20, 157, 221, 0);
+  }
+
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(20, 157, 221, 0);
+  }
+}
+
+@keyframes pulse-r{
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(23, 59, 108, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(23, 59, 108, 0);
+  }
+
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(23, 59, 108, 0);
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <!-- Link a la hoja de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -9,13 +9,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- meta description -->
     <meta name="description" content="Si cualquiera de los productos o servicios que pudo encontrar en esta pagina fue de su interés, no dude en comunicarse con nosotros para ofrecerles información mas detallada, ofreciendo también las modificaciones pertinentes de los productos para que los mismos se amolden a sus necesidades. De igual manera, si le intereso nuestra historia y trayectoria, por favor no dude en enviarnos su información de contacto junto a su curriculum para ver de integrarlo dentro de nuestro emprendimiento.">
 
     <title>Nabu Software - Contacto</title>
   </head>
   <body class="container-fluid">
 
-    <nav id="topmenu" class="row navbar navbar-expand-md bg-dark">
+    <!-- inicio top menu -->
+    <nav id="topmenu" class="row navbar navbar-expand-md background_color_nabu">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">
           <img class="logo_nav" src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253">
@@ -24,7 +26,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start background_color_nabu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <img class="logo_nav" src="img/logo_Nabu_Software.png" alt="Logo Nabu Software" width="270" height="253" onclick="location.href ='index.html'">
             <p class="offcanvas-title text-white" id="offcanvasNavbarLabel" onclick="location.href = 'index.html'">Nabu Software</p>
@@ -61,28 +63,32 @@
         </div>
       </div>
     </nav>
+    <!-- fin top menu -->
 
+    <!-- inicio contenido principal -->
     <main id="content" class="row d-flex justify-content-center align-items-center contacto_content">
 
       <section class="position-relative h-auto align-self-end align-self-md-center d-flex flex-column flex-md-row justify-content-end justify-content-md-center align-items-center p-3 col-7 col-md-11 contacto-formulario">
 
         <div class="col-6"></div>
+        <!-- inicio informacion de contacto -->
         <article class="position-absolute pt-3 pt-md-0 d-flex flex-column justify-content-center align-items-center col-12 col-md-5 contacto-info">
-            <div class="mb-3 d-flex flex-column justify-content-center col-9">
-              <h4 class="position-relative mb-2 contacto-dato_titulo">Localizacion:</h4>
-              San Carlos de Bariloche, Río Negro, Patagónia Argentina
-            </div>
-            <div class="mb-3 d-flex flex-column justify-content-center col-9">
-              <h4 class="position-relative mb-2 contacto-dato_titulo">E-Mail:</h4>
-              nabu.software.ar@gmail.com
-            </div>
-            <div class="mb-3 d-flex flex-column justify-content-center col-9">
-              <h4 class="position-relative mb-2 contacto-dato_titulo">Tel:</h4>
-              (+54) 294 450 2515
-            </div>
-          </article>
+          <div class="mb-3 d-flex flex-column justify-content-center col-9">
+            <h4 class="position-relative mb-2 contacto-dato_titulo">Localizacion:</h4>
+            San Carlos de Bariloche, Río Negro, Patagónia Argentina
+          </div>
+          <div class="mb-3 d-flex flex-column justify-content-center col-9">
+            <h4 class="position-relative mb-2 contacto-dato_titulo">E-Mail:</h4>
+            nabu.software.ar@gmail.com
+          </div>
+          <div class="mb-3 d-flex flex-column justify-content-center col-9">
+            <h4 class="position-relative mb-2 contacto-dato_titulo">Tel:</h4>
+            (+54) 294 450 2515
+          </div>
+        </article>
+        <!-- fin informacion de contacto -->
 
-
+        <!-- inicio formulario de contacto -->
         <div class="col-12 col-md-6 h-100 d-flex justify-content-center">
           <form class="row h-auto d-flex flex-column flex-nowrap justify-content-evenly align-items-center ml-md-2 mt-4 mt-md-0" action="contacto.php" method="post">
             <div class="mb-1 col-12 col-md-9">
@@ -116,16 +122,23 @@
             <button type="submit" class="btn btn-primary col-3 contacto-formulario_form_button">Enviar</button>
           </form>
         </div>
-
+        <!-- fin formulario de contacto -->
       </section>
 
     </main>
+    <!-- fin contenido principal -->
 
-    <section id="footer" class="row justify-content-center text-white fixed-bottom footer">
+    <!-- inicio footer -->
+    <section id="footer" class="row position-fixed start-0 bottom-0 end-0 justify-content-center text-white footer">
       Nabu Software - Soluciones Digitales
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-facebook-square"></i>
-      <i class="footer_redes d-flex flex-column justify-content-center w-auto fa-brands fa-instagram"></i>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://es-la.facebook.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-facebook-square"></i>
+      </a>
+      <a class="text-white text-decoration-none d-inline w-auto" href="https://www.instagram.com/" target="_blank">
+        <i class="footer_redes fa-brands fa-instagram"></i>
+      </a>
     </section>
+    <!-- fin footer -->
 
     <!-- Link al script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
