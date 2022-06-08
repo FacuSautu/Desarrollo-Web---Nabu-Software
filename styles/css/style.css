@@ -13,6 +13,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  background-color: rgba(174, 174, 174, 0.7);
   font-family: "Roboto", sans-serif;
 }
 
@@ -69,11 +70,19 @@ body {
 .content-index_frase {
   font-size: 2rem;
   font-size: 3rem;
+  background-color: rgba(4, 11, 20, 0.5);
 }
 
 .content-index_frase .typedText {
-  color: #040b14;
+  color: #149ddd;
   font-size: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .content-index_frase .typedText {
+    font-size: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .content-index_content_mobile img {
@@ -192,19 +201,30 @@ body {
 }
 
 /* ===================== CASOS EXITO ======================= */
-.proyecto {
+.casos_exito_detalle {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+@media all and (max-width: 768px) {
+  .casos_exito_detalle::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.casos_exito_detalle .proyecto {
   transition: transform 2s;
 }
 
-.proyecto:hover {
+.casos_exito_detalle .proyecto:hover {
   transform: scale(1.05);
 }
 
-.proyecto:hover .proyecto_titulo {
+.casos_exito_detalle .proyecto:hover .proyecto_titulo {
   display: unset !important;
 }
 
-.proyecto:hover .proyecto_detalle {
+.casos_exito_detalle .proyecto:hover .proyecto_detalle {
   display: unset !important;
 }
 
@@ -219,7 +239,11 @@ body {
   opacity: 0.8;
 }
 
-.integrante_nombre {
+.quienes_somos-integrante .integrante_img {
+  filter: brightness(0.3);
+}
+
+.quienes_somos-integrante .integrante_nombre {
   position: relative;
   color: #173b6c;
   font-size: 1.25rem;
@@ -228,7 +252,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .integrante_nombre {
+  .quienes_somos-integrante .integrante_nombre {
     height: 1.5rem;
     font-size: 1rem;
   }
@@ -310,6 +334,7 @@ body {
   color: #173b6c;
   font-size: 1.5rem;
   height: 2rem;
+  margin-left: 1rem;
 }
 
 @media all and (max-width: 768px) {
@@ -355,7 +380,7 @@ body {
   left: 0;
 }
 
-.normal_fs, .integrante_puesto {
+.normal_fs, .quienes_somos-integrante .integrante_puesto {
   font-size: 1rem;
 }
 
@@ -371,6 +396,7 @@ body {
 .footer {
   background-color: #040b14;
   padding: 2px;
+  z-index: 5;
 }
 
 .footer .footer_redes {
