@@ -179,6 +179,10 @@ body {
   transform: scale(1.05);
 }
 
+.producto:hover .card-img-overlay {
+  background-color: rgba(4, 11, 20, 0.8);
+}
+
 .producto:hover .producto_titulo {
   display: unset !important;
 }
@@ -187,17 +191,39 @@ body {
   display: unset !important;
 }
 
+@media all and (max-width: 768px) {
+  .producto .card-img-overlay {
+    background-color: rgba(4, 11, 20, 0.8);
+  }
+}
+
 /* ========================================================================== */
 /* ===================== Estilos pagina Quienes Somos ======================= */
 /* ========================================================================== */
 /* ====================== CARROUSEL ======================== */
-.imagen_carousel {
+#carouselGaleria .carousel-inner {
+  width: 60%;
+}
+
+@media all and (max-width: 768px) {
+  #carouselGaleria .carousel-inner {
+    width: 85%;
+  }
+}
+
+#carouselGaleria .imagen_carousel {
   filter: grayscale(100%);
   transition: filter 1s;
 }
 
-.imagen_carousel:hover {
+#carouselGaleria .imagen_carousel:hover {
   filter: grayscale(0%);
+}
+
+@media all and (max-width: 768px) {
+  #carouselGaleria .imagen_carousel {
+    filter: grayscale(0%);
+  }
 }
 
 /* ===================== CASOS EXITO ======================= */
@@ -220,12 +246,22 @@ body {
   transform: scale(1.05);
 }
 
+.casos_exito_detalle .proyecto:hover .card-img-overlay {
+  background-color: rgba(4, 11, 20, 0.8);
+}
+
 .casos_exito_detalle .proyecto:hover .proyecto_titulo {
   display: unset !important;
 }
 
 .casos_exito_detalle .proyecto:hover .proyecto_detalle {
   display: unset !important;
+}
+
+@media all and (max-width: 768px) {
+  .casos_exito_detalle .proyecto .card-img-overlay {
+    background-color: rgba(4, 11, 20, 0.8);
+  }
 }
 
 /* ===================== CLIENTES ======================= */
@@ -382,6 +418,14 @@ body {
 
 .normal_fs, .quienes_somos-integrante .integrante_puesto {
   font-size: 1rem;
+}
+
+.texto-fondo-primario {
+  color: #173b6c;
+}
+
+.texto-fondo-secundario {
+  color: #149ddd;
 }
 
 .logo_nav {

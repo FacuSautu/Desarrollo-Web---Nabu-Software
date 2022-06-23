@@ -197,12 +197,22 @@ body{
   &:hover{
     transform: scale(1.05);
 
+    .card-img-overlay{
+      background-color: rgba(4, 11, 20, 0.8);
+    }
+
     .producto_titulo{
       display: unset !important;
     }
 
     .producto_detalle{
       display: unset !important;
+    }
+  }
+
+  .card-img-overlay{
+    @media all and (max-width: 768px) {
+      background-color: rgba(4, 11, 20, 0.8);
     }
   }
 }
@@ -212,14 +222,28 @@ body{
 /* ========================================================================== */
       /* ====================== CARROUSEL ======================== */
 
-.imagen_carousel{
-  filter: grayscale(100%);
-  transition: filter 1s;
+#carouselGaleria{
+  .carousel-inner{
+    width: 60%;
 
-  &:hover{
-    filter: grayscale(0%);
+    @media all and (max-width: 768px) {
+      width: 85%;
+    }
+  }
+
+  .imagen_carousel{
+    filter: grayscale(100%);
+    transition: filter 1s;
+
+    &:hover{
+      filter: grayscale(0%);
+    }
+    @media all and (max-width: 768px) {
+      filter: grayscale(0%);
+    }
   }
 }
+
 
       /* ===================== CASOS EXITO ======================= */
 
@@ -239,12 +263,22 @@ body{
     &:hover{
       transform: scale(1.05);
 
+      .card-img-overlay{
+        background-color: rgba(4, 11, 20, 0.8);
+      }
+
       .proyecto_titulo{
         display: unset !important;
       }
 
       .proyecto_detalle{
         display: unset !important;
+      }
+    }
+
+    .card-img-overlay{
+      @media all and (max-width: 768px) {
+        background-color: rgba(4, 11, 20, 0.8);
       }
     }
   }
@@ -333,6 +367,14 @@ body{
 
 .normal_fs{
   font-size: 1rem;
+}
+
+.texto-fondo-primario{
+  color: $color_secundario;
+}
+
+.texto-fondo-secundario{
+  color: $color_primario;
 }
 
 .logo_nav{
